@@ -561,9 +561,9 @@ a.active-menu {
 }
 
 .find-fellow {
-    height: 516px;
+    height: 408px;
     background-image: url("images/back-mobile.png");
-    padding-top: 125px;
+    padding-top: 108px;
     padding-left: 99px;
 }
 
@@ -577,6 +577,7 @@ a.active-menu {
     text-align: left;
     text-transform: uppercase;
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 .find-fellow h2 {
@@ -589,6 +590,8 @@ a.active-menu {
     text-align: left;
     text-transform: uppercase;
     width: 475px;
+    margin-top: -11px;
+    letter-spacing: -4.4px;
 }
 
 .find-fellow p {
@@ -599,9 +602,128 @@ a.active-menu {
     line-height: 24px;
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+    margin-top: 11px;
+    letter-spacing: -0.3px;
 }
 
 .find-fellow .appStore {
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.footer {
+    height: 384px;
+    padding-left: 99px;
+    padding-top: 114px;
+    padding-right: 105px;
+    display: flex;
+}
+
+.contact-us {
+    width: 221px;
+    height: 150px;
+    border: 1px solid #000;
+    margin-right: 74px;
+}
+
+.footer h4 {
+    color: #6c6c6c;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.contact-us p {
+    color: #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-top: 14px;
+    letter-spacing: -0.2px;
+    margin-bottom: 21px;
+}
+
+.useful-information {
+    width: 425px;
+    height: 150px;
+    border: 1px solid #000;
+    margin-right: 74px;
+}
+
+.useful-information h4 {
+    letter-spacing: 1.5px;
+}
+
+.link-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.link-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: -26px;
+}
+
+.useful-information a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 26px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stay-in-touch {
+    width: 363px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+
+.stay-in-touch h4 {
+    letter-spacing: 1.4px;
+}
+
+.stay-in-touch p {
+    color: #212121;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-top: 24px;
+    letter-spacing: -0.2px;
+    margin-top: 13px;
+}
+
+.stay-in-touch input {
+    border-width: 1px;
+    border-color: #d9dee1;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 368px;
+    height: 46px;
+    margin-top: 26px;
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
 }
