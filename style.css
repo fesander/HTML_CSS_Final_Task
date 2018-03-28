@@ -615,8 +615,9 @@ a.active-menu {
     height: 384px;
     padding-left: 99px;
     padding-top: 114px;
-    padding-right: 105px;
+    padding-right: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-us {
@@ -668,10 +669,15 @@ a.active-menu {
     justify-content: space-between;
     margin-top: 36px;
 }
+
 .link-block {
     display: flex;
     flex-direction: column;
     margin-top: -26px;
+}
+
+.link-block a:hover {
+    text-decoration: underline;
 }
 
 .useful-information a {
@@ -726,4 +732,45 @@ a.active-menu {
     line-height: 22px;
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
+    padding-left: 19px;
+}
+
+.bottom-of-the-page {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright,
+.privacy {
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.social {
+    width: 129px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 158px;
+    margin-right: 172px;
+    border: 1px solid #000;
+}
+.fb,
+.tv,
+.google,
+.pp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color:white;
+    text-decoration: none;
+    background-image: url("images/social-links.png");
+}
+
+.tv {
+    background-position: 0 30px;
 }
