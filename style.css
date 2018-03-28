@@ -71,8 +71,10 @@ a.active-menu {
 }
 
 .menu img {
+    display: block;
     margin-top: 6px;
     margin-left: 4px;
+    border: 1px solid #000;
 }
 
 .menu input {
@@ -93,6 +95,14 @@ a.active-menu {
     padding-left: 5px;
     letter-spacing: 0.7px;
     opacity: 0;
+}
+
+.search-img {
+    display: flex;
+}
+
+.search-img:hover .search {
+    opacity: 100;
 }
 
 .container-head h4 {
@@ -148,11 +158,16 @@ a.active-menu {
 }
 
 .order-us:hover {
-    background: #eeeeee url(images/arrow.png) no-repeat;
-    background-position: 173px;
+    background-color: #e9e9e9;
 }
 
-.slider-navigation {
+.order-us:active {
+    box-shadow: 0px 0px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+}
+
+.slider-navigation  {
     width: 120px;
     height: 40px;
     margin-top: 141px;
@@ -170,11 +185,16 @@ a.active-menu {
     background-color: rgba(33, 33, 33, 0.2);
 }
 
+.slider-navigation .point:hover {
+    background-color: #212121;
+}
+
 .slider-navigation .active-slider {
     background-color: #212121;
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    border: none;
 }
 
 .container-featured {
@@ -296,6 +316,16 @@ a.active-menu {
     margin-left: 111px;
     margin-top: 62px;
     margin-bottom: 19px;
+}
+
+.product-active .arrow:hover {
+    background-color: #e9e9e9;
+}
+
+.product-active .arrow:active {
+    box-shadow: 0px 0px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
 }
 
 .product-active h4 {
