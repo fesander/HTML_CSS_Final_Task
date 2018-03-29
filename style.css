@@ -10,19 +10,24 @@ body {
 }
 
 .container {
-    width: 1366px;
+    max-width: 1366px;
+    min-width: 650px;
     margin: 0 auto;
 }
 
 .container-head {
-    height: 800px;
+    position: relative;
+    min-height: 800px;
     background-image: url("images/slider-img.png");
+    background-repeat: no-repeat;
+    background-size:cover;
     padding-left: 98px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -74,7 +79,6 @@ a.active-menu {
     display: block;
     margin-top: 6px;
     margin-left: 4px;
-    border: 1px solid #000;
 }
 
 .menu input {
@@ -82,9 +86,10 @@ a.active-menu {
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
-    width: 150px;
+    width: 140px;
     height: 30px;
     margin-top: 0px;
+    margin-left: 10px;
     color: #6c6c6c;
     font-size: 14px;
     /* Приближение из-за подстановки шрифтов */
@@ -168,13 +173,13 @@ a.active-menu {
 }
 
 .slider-navigation  {
-    width: 120px;
+    position: absolute;
+    width: 80%;
     height: 40px;
-    margin-top: 141px;
-    margin-left: 524px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    bottom: 19px;
 }
 
 .slider-navigation .point {
@@ -183,6 +188,8 @@ a.active-menu {
     border-radius: 15px;
     display: block;
     background-color: rgba(33, 33, 33, 0.2);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .slider-navigation .point:hover {
@@ -198,18 +205,17 @@ a.active-menu {
 }
 
 .container-featured {
-    height: 609px;
+    min-height: 609px;
     padding-left: 98px;
     padding-right: 97px;
+    padding-top: 113px;
+    box-sizing: border-box;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-}
-
-.featured-new {
-    margin-top: 113px;
+    flex-wrap: wrap;
 }
 
 .featured-new a {
@@ -237,7 +243,7 @@ a.active-menu {
 }
 
 .explore {
-    margin-top: 133px;
+    margin-top: 20px;
 }
 
 .explore a {
@@ -350,8 +356,9 @@ a.active-menu {
 }
 
 .container-promo {
-    height: 683px;
+    min-height: 683px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container-promo .cheir {
@@ -410,15 +417,17 @@ a.active-menu {
 }
 
 .container-products {
-    height: 1108px;
+    min-height: 1108px;
     padding-left: 98px;
     padding-right: 97px;
     box-sizing: border-box;
+    padding-top: 112px;
 }
 
 .products-explore {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .products-explore h2 {
@@ -426,7 +435,6 @@ a.active-menu {
     font-size: 36px;
     font-weight: 700;
     text-align: left;
-    margin-top: 112px;
     letter-spacing: -1.4px;
 }
 
@@ -484,6 +492,7 @@ a.active-menu {
 }
 
 .container-table {
+    position: relative;
     height: 800px;
     background-image: url("images/slider.png");
     padding-left: 98px;
@@ -533,7 +542,7 @@ a.active-menu {
 }
 
 .five-pictures {
-    height: 810px;
+    min-height: 810px;
 }
 
 .one-four {
@@ -542,11 +551,12 @@ a.active-menu {
     padding-right: 98px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .one-product {
     width: 570px;
-    height: 570px;
+    min-height: 570px;
     background-image: url("images/product-1-lg.png");
     padding-left: 31px;
     box-sizing: border-box;
@@ -587,7 +597,7 @@ a.active-menu {
 
 .four-products {
     width: 570px;
-    height: 570px;
+    min-height: 570px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -673,7 +683,7 @@ a.active-menu {
 }
 
 .footer {
-    height: 384px;
+    min-height: 384px;
     padding-left: 99px;
     padding-top: 114px;
     padding-right: 100px;
@@ -684,7 +694,7 @@ a.active-menu {
 
 .contact-us {
     width: 221px;
-    height: 150px;
+    min-height: 150px;
     margin-right: 74px;
 }
 
@@ -715,7 +725,7 @@ a.active-menu {
 
 .useful-information {
     width: 425px;
-    height: 150px;
+    min-height: 150px;
     margin-right: 74px;
 }
 
@@ -727,13 +737,12 @@ a.active-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 36px;
+    margin-top: 10px;
 }
 
 .link-block {
     display: flex;
     flex-direction: column;
-    margin-top: -26px;
 }
 
 .link-block a:hover {
@@ -755,9 +764,8 @@ a.active-menu {
 
 .stay-in-touch {
     width: 363px;
-    height: 150px;
+    min-height: 150px;
 }
-
 
 .stay-in-touch h4 {
     letter-spacing: 1.4px;
@@ -776,12 +784,16 @@ a.active-menu {
     margin-top: 13px;
 }
 
+.stay-in-touch form {
+    position: relative;
+}
+
 .stay-in-touch input {
     border-width: 1px;
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
-    width: 350px;
+    width: 375px;
     height: 46px;
     margin-top: 23px;
     color: #6c6c6c;
@@ -792,7 +804,20 @@ a.active-menu {
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
     padding-left: 19px;
+    padding-right: 40px;
     letter-spacing: 0.7px;
+    box-sizing: border-box;
+}
+
+.fa-telegram-plane {
+    position: absolute;
+    bottom: 32px;
+    right: 0px;
+    font-size: 1.5em;
+    color: #6c6c6c;
+}
+.fa-telegram-plane:hover {
+    color: black;
 }
 
 .bottom-of-the-page {
@@ -819,10 +844,7 @@ a.active-menu {
     margin-left: 158px;
     margin-right: 172px;
 }
-.fb,
-.tv,
-.google,
-.pp {
+.ss {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -834,14 +856,22 @@ a.active-menu {
     background-repeat: no-repeat;
 }
 
+.ss:hover {
+    background: #212121 url("images/social-links.png");
+}
+
+.fb {
+    background-position: 1px 1px;
+}
+
 .tv {
-    background-position: -35px 0;
+    background-position: -33px 1px;
 }
 
 .google {
-    background-position: -67px 0;
+    background-position: -67px 1px;
 }
 
 .pp {
-    background-position: -100px 0;
+    background-position: -100px 1px;
 }
