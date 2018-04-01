@@ -53,6 +53,7 @@ body {
 .menu {
   margin-right: 11px;
   margin-top: 56px;
+  margin-bottom: 30px;
 }
 .menu a {
   display: block;
@@ -90,7 +91,6 @@ a.active-menu {
 }
 .product-details-nav {
   background-color: #f4f4f4;
-  background-color: aqua;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -120,6 +120,114 @@ a.active-menu {
 }
 .product-details-nav a:hover {
   color: #212121;
+}
+.product-detail {
+  min-height: 670px;
+  padding-top: 72px;
+  padding-left: 98px;
+  padding-right: 98px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product-detail .pictures {
+  width: 570px;
+}
+.product-detail .pictures .chair a {
+  display: block;
+  height: 570px;
+  background-image: url("images/slider-chair.png");
+}
+.product-detail .pictures .color-variants {
+  display: flex;
+  justify-content: center;
+  margin-top: 11px;
+}
+.product-detail .pictures .color-variants a {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid transparent;
+}
+.product-detail .pictures .color-variants a:hover {
+  border: 1px solid #000;
+}
+.product-detail .pictures .color-variants .blue {
+  background-image: url("images/controll.png");
+}
+.product-detail .pictures .color-variants .purpul {
+  background-image: url("images/controll11.png");
+}
+.product-detail .pictures .color-variants .red {
+  background-image: url("images/controll2.png");
+}
+.product-detail .text {
+  width: 541px;
+  padding-top: 30px;
+}
+.product-detail .text h3 {
+  color: #212121;
+  font-size: 35.98px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  transform: scaleY(1.0005);
+}
+.product-detail .text h4 {
+  color: #e53935;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 48px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  transform: scaleY(1.0005);
+}
+.product-detail .text h2 {
+  color: #212121;
+  font-size: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 48px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+.product-detail .text .order-us {
+  background-color: #f44336;
+  box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+  width: 510px;
+  height: 71px;
+  color: #ffffff;
+  font-size: 21.99px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  transform: scaleY(1.0005);
+  line-height: 71px;
+  background-image: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.product-detail .text .order-us:hover {
+  background-color: #ff3336;
+}
+.product-detail .text p {
+  color: #212121;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  transform: scaleY(1.0005);
+  margin-bottom: 10px;
+}
+.related {
+  padding-top: 220px;
+  padding-bottom: 120px;
 }
 .container-head h4 {
   font-family: Montserrat;
@@ -208,6 +316,9 @@ a.active-menu {
 .contact-us-head {
   background-color: #f5f5f5;
   height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .contact-us-head h1 {
   color: #212121;
@@ -217,11 +328,10 @@ a.active-menu {
   line-height: 72px;
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
-  margin-top: 171px;
+  margin-bottom: 44px;
 }
 .product-details-head {
-  background-color: #f5f5f5;
-  height: 119px;
+  min-height: 119px;
 }
 .contact-us-main {
   display: flex;
@@ -338,6 +448,8 @@ a.active-menu {
 }
 .product-navigation {
   margin-top: 71px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .product-navigation a {
   color: #6c6c6c;
